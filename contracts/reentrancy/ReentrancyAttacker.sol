@@ -2,7 +2,6 @@ pragma solidity ^0.4.0;
 
 import "./Reentrancy.sol";
 import "./ReentrancyVulnerable.sol";
-import "./ReentrancyVulnerableFixed.sol";
 
 contract ReentrancyAttacker {
 
