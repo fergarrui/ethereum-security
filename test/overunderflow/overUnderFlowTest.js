@@ -1,13 +1,13 @@
 var BigNumber = require('bignumber.js');
 var OverUnderFlow = artifacts.require("./OverUnderFlow.sol");
 
-contract("OverUnderFlow", function (accounts) {
+contract("OverUnderFlow", (accounts) => {
 
 var maxNumber = new BigNumber(2).pow(256).minus(1);
 var zeroNumber = new BigNumber(0);
 var inst;
 
-    it("Test overflow", function() {
+    it("Test overflow", () => {
         return OverUnderFlow.deployed().then(instance => {
             inst = instance;
             return instance.getMax.call();

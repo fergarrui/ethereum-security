@@ -1,12 +1,12 @@
 var ReentrancyVulnerable = artifacts.require("./ReentrancyVulnerable.sol");
 var ReentrancyAttacker = artifacts.require("./ReentrancyAttacker.sol");
 
-contract("ReentrancyVulnerable", function (accounts) {
+contract("ReentrancyVulnerable", (accounts) => {
 
     var victim;
     var attacker;
 
-    it("Test reentrancy", function() {
+    it("Test reentrancy", () => {
         // deploying the victim contract
         return ReentrancyVulnerable.deployed().then(instanceVictim => {
             victim = instanceVictim;

@@ -8,6 +8,7 @@ Bugs added so far:
 * Overflow
 * Underflow
 * Reentrancy
+* Delegatecall (Parity hack style)
 
 Run:
 
