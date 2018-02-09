@@ -16,9 +16,10 @@ contract AuctionFixed {
     }
 
     function withdraw() public {
-        require(refunds[msg.sender] > 0);
+        uint refund = refunds[msg.sender];
+        require(refund > 0);
         refunds[msg.sender] = 0;
-        msg.sender.transfer(refunds[msg.sender]);
+        msg.sender.transfer(refund);
     }
 
     function getCurrentLeader() public view returns (address) {
