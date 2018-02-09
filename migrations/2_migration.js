@@ -9,6 +9,8 @@ var Wallet = artifacts.require("./Wallet.sol");
 var Auction = artifacts.require("./Auction.sol");
 var AuctionFixed = artifacts.require("./AuctionFixed.sol");
 var AuctionAttacker = artifacts.require("./AuctionAttacker.sol");
+var ForceEtherVictim = artifacts.require("./ForceEtherVictim.sol");
+var ForceEtherAttacker = artifacts.require("./ForceEtherAttacker.sol");
 
 module.exports = function(deployer) {
   deployer.deploy(OverUnderFlow);
@@ -22,4 +24,6 @@ module.exports = function(deployer) {
   deployer.deploy(Auction);
   deployer.deploy(AuctionFixed);
   deployer.deploy(AuctionAttacker);
+  deployer.deploy(ForceEtherVictim);
+  deployer.deploy(ForceEtherAttacker);
 };
