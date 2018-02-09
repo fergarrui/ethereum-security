@@ -17,6 +17,7 @@ contract AuctionFixed {
 
     function withdraw() public {
         require(refunds[msg.sender] > 0);
+        refunds[msg.sender] = 0;
         msg.sender.transfer(refunds[msg.sender]);
     }
 
