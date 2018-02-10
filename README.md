@@ -1,5 +1,6 @@
-
 # ethereum-security
+
+## :exclamation: :warning: DO NOT USE THE CONTRACTS IN THIS REPOSITORY. THEY ARE VULNERABLE TO SECURITY BUGS. :warning: :exclamation:
 
 Repository with some Ethereum security bugs.
 The bugs and fixes are demonstrated using Mocha tests.
@@ -11,6 +12,8 @@ Bugs added so far:
 * Reentrancy (DAO hack)
 * Delegatecall (Parity hack style)
 * DOS (e.g. stay as an Auction leader forever)
+* Force ether (relying on the invariant this.balance == 0)
+* Tx.origin
 
 Run:
 

@@ -11,6 +11,9 @@ var AuctionFixed = artifacts.require("./AuctionFixed.sol");
 var AuctionAttacker = artifacts.require("./AuctionAttacker.sol");
 var ForceEtherVictim = artifacts.require("./ForceEtherVictim.sol");
 var ForceEtherAttacker = artifacts.require("./ForceEtherAttacker.sol");
+var TxOriginVictim = artifacts.require("./TxOriginVictim.sol");
+var TxOriginAttacker = artifacts.require("./TxOriginAttacker.sol");
+var TxOriginVictimFixed = artifacts.require("./TxOriginVictimFixed.sol");
 
 module.exports = function(deployer) {
   deployer.deploy(OverUnderFlow);
@@ -26,4 +29,7 @@ module.exports = function(deployer) {
   deployer.deploy(AuctionAttacker);
   deployer.deploy(ForceEtherVictim);
   deployer.deploy(ForceEtherAttacker);
+  deployer.deploy(TxOriginVictim);
+  deployer.deploy(TxOriginAttacker);
+  deployer.deploy(TxOriginVictimFixed);
 };
