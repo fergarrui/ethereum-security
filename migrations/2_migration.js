@@ -14,6 +14,8 @@ var ForceEtherAttacker = artifacts.require("./ForceEtherAttacker.sol");
 var TxOriginVictim = artifacts.require("./TxOriginVictim.sol");
 var TxOriginAttacker = artifacts.require("./TxOriginAttacker.sol");
 var TxOriginVictimFixed = artifacts.require("./TxOriginVictimFixed.sol");
+var UnboundArray = artifacts.require("./UnboundArray.sol");
+var UnboundArrayFixed = artifacts.require("./UnboundArrayFixed.sol");
 
 module.exports = function(deployer) {
   deployer.deploy(OverUnderFlow);
@@ -32,4 +34,6 @@ module.exports = function(deployer) {
   deployer.deploy(TxOriginVictim);
   deployer.deploy(TxOriginAttacker);
   deployer.deploy(TxOriginVictimFixed);
+  deployer.deploy(UnboundArray);
+  deployer.deploy(UnboundArrayFixed);
 };
