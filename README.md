@@ -12,6 +12,7 @@ Bugs added so far:
 * Reentrancy (DAO hack)
 * Delegatecall (Parity hack style)
 * DOS (e.g. stay as an Auction leader forever)
+* DOS (unbounded array loop)
 * Force ether (relying on the invariant this.balance == 0)
 * Tx.origin
 
