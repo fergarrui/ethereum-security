@@ -16,8 +16,11 @@ var TxOriginAttacker = artifacts.require("./TxOriginAttacker.sol");
 var TxOriginVictimFixed = artifacts.require("./TxOriginVictimFixed.sol");
 var UnboundArray = artifacts.require("./UnboundArray.sol");
 var UnboundArrayFixed = artifacts.require("./UnboundArrayFixed.sol");
+var WalletSendBug = artifacts.require("./WalletSendBug.sol");
+var WalletSendBugFixed = artifacts.require("./WalletSendBugFixed.sol");
 
 module.exports = function(deployer) {
+
   deployer.deploy(OverUnderFlow);
   deployer.deploy(OverUnderFlowFixed);
   deployer.deploy(ReentrancyVulnerable);
@@ -36,4 +39,7 @@ module.exports = function(deployer) {
   deployer.deploy(TxOriginVictimFixed);
   deployer.deploy(UnboundArray);
   deployer.deploy(UnboundArrayFixed);
+  deployer.deploy(WalletSendBug);
+  deployer.deploy(WalletSendBugFixed);
+
 };

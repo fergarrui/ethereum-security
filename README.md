@@ -15,6 +15,7 @@ Bugs added so far:
 * DOS (unbounded array loop)
 * Force ether (relying on the invariant this.balance == 0)
 * Tx.origin
+* Unchecked send() output
 
 Run:
 
