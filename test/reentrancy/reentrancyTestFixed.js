@@ -8,7 +8,7 @@ contract("ReentrancyVulnerableFixed", (accounts) => {
 
     it("Test reentrancy Fixed", () => {
         // deploying the victim contract
-        return ReentrancyVulnerableFixed.deployed().then(instanceVictim => {
+        return ReentrancyVulnerableFixed.new().then(instanceVictim => {
             victim = instanceVictim;
             return victim.address;
         }).then(address => {
@@ -33,7 +33,8 @@ contract("ReentrancyVulnerableFixed", (accounts) => {
             // checking that the contract balance no is 410
             assert.equal(410, victimBalance);
         })).then(() => {
-            attacker.depositInContract({gasPrice:0, value: 100});
+            return attacker.depositInContract({gasPrice:0, value: 100});
+        }).then(() => {
             return victim.getContractBalance.call();
         }).then(victimContractBalance => {
             // checking that the contract balance is 510
