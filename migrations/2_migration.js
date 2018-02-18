@@ -13,6 +13,8 @@ var UnboundArray = artifacts.require("./UnboundArray.sol");
 var UnboundArrayFixed = artifacts.require("./UnboundArrayFixed.sol");
 var WalletSendBug = artifacts.require("./WalletSendBug.sol");
 var WalletSendBugFixed = artifacts.require("./WalletSendBugFixed.sol");
+var StorageVictim = artifacts.require("./StorageVictim.sol");
+var StorageVictimFixed = artifacts.require("./StorageVictimFixed.sol");
 
 module.exports = function(deployer) {
 
@@ -31,5 +33,7 @@ module.exports = function(deployer) {
   deployer.deploy(UnboundArrayFixed);
   deployer.deploy(WalletSendBug);
   deployer.deploy(WalletSendBugFixed);
+  deployer.deploy(StorageVictim);
+  deployer.deploy(StorageVictimFixed);
 
 };
