@@ -16,6 +16,7 @@ Bugs added so far:
 * Force ether (relying on the invariant this.balance == 0)
 * Tx.origin
 * Unchecked send() output
+* Storage override (commonly used in honeypots - or genuine bugs)
 
 Run:
 
