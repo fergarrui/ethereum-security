@@ -15,7 +15,7 @@ contract ReentrancyVulnerableFixed is Reentrancy {
         require(amount > 0);
         // This is the only change compared to ReentrancyVulnerable.sol
         balances[msg.sender] = 0;
-        msg.sender.call.value(balances[msg.sender])();
+        msg.sender.call.value(amount)();
     }
 
     function checkBalance() public view returns (uint) {
