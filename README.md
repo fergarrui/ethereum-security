@@ -17,6 +17,7 @@ Bugs added so far:
 * Tx.origin
 * Unchecked send() output
 * Storage override (commonly used in honeypots - or genuine bugs)
+* Array storage override (length underflow - storage override)
 
 Run:
 
