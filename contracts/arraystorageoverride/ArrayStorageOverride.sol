@@ -5,6 +5,10 @@ contract ArrayStorageOverride {
     bool public isHacked;
     uint[] public array;
 
+    function push(uint _value) public {
+        array.push(_value);
+    }
+
     function pop() public {
         array.length--;
     }

@@ -11,6 +11,10 @@ contract ArrayStorageOverrideFixed {
         array.length--;
     }
 
+    function push(uint _value) public {
+        array.push(_value);
+    }
+
     function insert(uint _key, uint _value) public {
         require(_key < array.length);
         array[_key] = _value;
