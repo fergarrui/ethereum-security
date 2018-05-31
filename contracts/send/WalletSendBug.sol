@@ -1,4 +1,4 @@
-pragma solidity ^0.4.0;
+pragma solidity ^0.4.23;
 
 // Hypothetical situation where not checking the output of send() function
 // makes this contract to be broken forever.

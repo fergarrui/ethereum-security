@@ -1,4 +1,4 @@
-pragma solidity ^0.4.0;
+pragma solidity ^0.4.23;
 
 // Useless contract with not much sense, just to demonstrate the override
 contract StorageVictim {
