@@ -18,6 +18,7 @@ Bugs added so far:
 * Unchecked send() output
 * Storage override (commonly used in honeypots - or genuine bugs)
 * Array storage override (length underflow - storage override)
+* `extcodesize` bypassed when used to check if the caller is a contract
 
 Run:
 
