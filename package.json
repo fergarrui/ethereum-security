@@ -1,0 +1,27 @@
+{
+  "name": "ethereum-security",
+  "version": "1.0.0",
+  "description": "## :exclamation: :warning: DO NOT USE THE CONTRACTS IN THIS REPOSITORY. THEY ARE VULNERABLE TO SECURITY BUGS. :warning: :exclamation:",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "bignumber.js": "^6.0.0",
+    "truffle": "^5.0.44"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./node_modules/truffle/build/cli.bundled.js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fergarrui/ethereum-security.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fergarrui/ethereum-security/issues"
+  },
+  "homepage": "https://github.com/fergarrui/ethereum-security#readme"
+}
